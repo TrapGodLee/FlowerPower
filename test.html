@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        /* GOOGLE FONTS LINK */
+        @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Indie+Flower&display=swap');
+        
+        /* ROOTCOLOR RE-USE */
+        :root {
+            --primary-color: rgb(209, 208, 208);
+        }
+
+        /* UNIVERSAL */
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        /* BODY  */
+        body{
+            line-height: 1.6;
+        }
+
+        /* LOGO  Navbar*/
+        .logo{
+            font-family: 'Fascinate', cursive;
+            color: yellow;
+        }
+        /* NAVBAR */
+        .navbar .flex{
+            justify-content: space-between;
+        }
+
+        .navbar {
+            background-color: black;
+            height: 70px;
+        }
+        
+        nav {
+            font-family: 'Fascinate', cursive;
+            font-family: 'Indie Flower', cursive;
+
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: yellow;
+            /* padding: 10px; */
+            margin: 0 5px;
+        }
+
+        .navbar ul {
+            display: flex;
+            
+        }
+
+        .navbar a:hover {
+            border-bottom: 2px yellow solid;
+        }
+
+
+      
+/* FLEXBOX */
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* IMAGE */
+        img{
+            width: 100%;
+        }
+
+        /* CONTAINER  */
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 0 40px;
+        }
+
+        /* CONTENT BOOTSTRAP HOMEPAGE */
+        .BootstrapGrid{
+            height: 400px;
+            background-color: var(--primary-color);
+            position: relative;
+        }
+
+        .GC{
+            position: relative;
+            top: 250px;
+        }
+
+
+        .BootstrapGrid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        /* CONTENT GRID */
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+        }
+
+          /* footer */
+          footer {
+            background-color: black; 
+            height: 270px;
+        }
+
+        .footer ul{
+            list-style-type: none;
+        }
+
+        .footer a{
+            text-decoration: none;
+            color: yellow;
+        }
+
+        /* CAROUSEL */
+        .carousel-item{
+            height: 25rem;
+            background:gray;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container .carousel{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-bottom: 20px;
+        }
+
+        .container .carousel{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-bottom: 20px;
+        }
+
+
+        /* test */
+        .categories{
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .category-item{
+            flex-grow: 1;
+            flex-basis: 0;
+            min-width: 33.33%;
+            border: 1px solid black;
+            box-sizing: border-box;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        @media(max-width: 1000px){
+            .category-item{
+                min-width: 50%;
+            }
+        }
+
+        @media(max-width: 800px){
+            .category-item{
+                min-width: 100%;
+            }
+        }
+
+        .category-item-inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .category-item-inner > div {
+            padding: 5px 10px;
+            background: black;
+            color: white;
+            border-radius: 5px;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo en login grid -->
+    <div class="navbar">
+        <div class="container flex">
+            <a href="test.html"><h1 class="logo">Flower Power</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="LoginRegistreer.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+
+            <!-- GRID NAVBAR -->
+    <div class="navbar">
+        <div class="container flex">
+            <nav>
+                <ul>
+                    <li><a href="RozenEnTulpen.html">Rozen En Tulpen</a></li>
+                    <li><a href="bruiloften.html">Bruiloften</a></li>
+                    <li><a href="Uitvaart.html">Uitvaart</a></li>
+                    <li><a href="Vazen.html">Vazen</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        </div>
+
+            
+        <!-- TEST -->
+        <section class="categories">
+            <div class="category-item" style="background-image: url('image/grijsvaas.jpg');">
+                <div class="category-item-inner">
+                    <div>
+                        Vazen
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-item" style="background-image: url('image/huwelijksboeketg.jpg');">
+                <div class="category-item-inner">
+                    <div>
+                        Bruiloften
+                    </div>
+                </div>
+            </div>
+            <div class="category-item" style="background-image: url('image/uitvaart.jpg');">
+                <div class="category-item-inner">
+                    <div>
+                        Uitvaart
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category-item" style="background-image: url('image/Roses-banner.jpg');">
+                <div class="category-item-inner">
+                    <div>
+                        Rozen
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OVER ONS -->
+        <div class="container">
+         <section class="gridoverons">
+            Flowerpower heeft voor ieder seizoen boeketten en past haar online collectie aan om u een boeket voor elke gelegenheid te bieden. 
+            Wij bieden vaste collecties zoals beterschapsboeketten, rouwboeketten, bruidsboeketten, bloemstukken voor speciale gelegenheden. 
+            We hebben bloemen in thema’s zoals voor Valentijnsdag, Pasen, Kerst, Moederdag, Secretaressedag en noem maar op. 
+            Heeft u geen geschikt boeket gevonden voor uw gelegenheid? Wij maken ook persoonlijke bestellingen op maat en in uw budget. 
+            U kunt onze prachtige boeketten online bestellen én wij bezorgen ze persoonlijk thuis.
+          </section> 
+        </div>
+        
+        <!-- FOOTER FLEXBOX -->
+        <footer class="footer bg-dark py-5">
+            <div class="container grid grid-2">
+                <div>
+                <h2 class="logo">flowerpower</h1>
+                <p>Copyright &copy; 2020</p>
+                </div>
+            
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Bloemen</a></li>
+                    <li><a href="index.html">Vazen</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ 
+    <title>Home</title>
+    <style>
+        /* GOOGLE FONTS LINK */
+        @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Indie+Flower&display=swap');
+
+        /* UNIVERSAL */
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        /* BODY  */
+        body{
+            line-height: 1.6;
+        }
+
+        /* LOGO  Navbar*/
+        .logo{
+            font-family: 'Fascinate', cursive;
+            color: yellow;
+        }
+        /* NAVBAR */
+        .navbar .flex{
+            justify-content: space-between;
+        }
+
+        .navbar {
+            background-color: black;
+            height: 60px;
+        }
+        
+        nav {
+            font-family: 'Fascinate', cursive;
+            font-family: 'Indie Flower', cursive;
+
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: yellow;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        .navbar ul {
+            display: flex;
+            
+        }
+
+        .navbar a:hover{
+            border-bottom: 2px yellow solid;
+        }
+
+           /* CONTAINER  */
+           .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 0 40px;
+        }
+        
+      /* FLEXBOX */
+      .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* IMAGE */
+        img{
+            width: 100%;
+        }
+
+        /* footer */
+        footer {
+            background-color: black; 
+            height: 270px;
+        }
+
+        .footer ul{
+            list-style-type: none;
+        }
+
+        .footer a{
+            text-decoration: none;
+            color: yellow;
+        }
+
+        /* producten */
+        .featured-products{
+            margin-top: 20px;
+            /* border: 1px solid black; */
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5px;
+        }
+
+        @media (max-width: 1000px) {
+            .featured-products{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .featured-products{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .Vazen{
+            text-align: center;
+        }
+
+        .featured-products-item{
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid #ddd; 
+            
+        }
+
+        .featured-product-item-image{
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .featured-products-item > .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .featured-products-item > .description {
+            color: #666;
+        }
+
+        .featured-products-item > .price {
+            font-style: italic;
+        }
+
+        button{
+            outline: none;
+            background: black;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+   <!-- GRID NAVBAR -->
+    <!-- Logo en login grid -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Flower Power</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="index.html">Registreer</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+
+            <!-- GRID NAVBAR -->
+    <div class="navbar">
+        <div class="container flex">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Bloemen</a></li>
+                    <li><a href="index.html">Vazen</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    
+     <!-- CONTENT -->
+      <h2 class="Vazen">
+            Vazen
+        </h2>
+     <section class="featured-products">
+       <div class="featured-products-item">
+        <div style="background-image: url('image/flowers/eastertulip.jpg');" class="featured-product-item-image">
+                
+        </div>
+        <p class="title">
+            Roze vaas
+        </p>
+        <p class="description">
+            een roze vaas
+        </p>
+        <p class="price">
+            €10
+        </p>
+        <button>
+            view item
+        </button>
+       </div>
+
+       <div class="featured-products-item">
+        <div style="background-image: url('image/flowers/icedrose.jpg');" class="featured-product-item-image">
+                
+        </div>
+        <p class="title">
+            Blauwe en Rode vaas
+        </p>
+        <p class="description">
+            een blauwe vaas
+        </p>
+        <p class="price">
+            €12
+        </p>
+        <button>
+            view item
+        </button>
+        
+       </div>
+
+       <div class="featured-products-item">
+            <div style="background-image: url('image/flowers/rose1.jpg');" class="featured-product-item-image">
+
+            </div>
+            <p class="title">
+                Roze vaas
+            </p>
+            <p class="description">
+                een roze vaas
+            </p>
+            <p class="price">
+                €9,99
+            </p>
+            <button>
+                view item
+            </button>
+       </div>
+
+       <div class="featured-products-item">
+        <div style="background-image: url('image/flowers/purpletulip.jpg');" class="featured-product-item-image">
+                
+        </div>
+        <p class="title">
+            Vos vaas
+        </p>
+        <p class="description">
+            een blauwe vaas
+        </p>
+        <p class="price">
+            €15
+        </p>
+        <button>
+            view item
+        </button>
+       </div>
+
+       <div class="featured-products-item">
+        <div style="background-image: url('image/flowers/roseblack.jpg');" class="featured-product-item-image">
+                
+        </div>
+        <p class="title">
+            roos 
+        </p>
+        <p class="description">
+            roos met zwarte dekking
+        </p>
+        <p class="price">
+            €9,99
+        </p>
+        <button>
+            view item
+        </button>
+       </div>
+
+       <div class="featured-products-item">
+        <div style="background-image: url('image/flowers/roses.jpg');" class="featured-product-item-image">
+                
+        </div>
+        <p class="title">
+            Rozen
+        </p>
+        <p class="description">
+            stuk rozen
+        </p>
+        <p class="price">
+            €10,99
+        </p>
+        <button>
+            view item
+        </button>
+       </div>
+
+       <div class="featured-products-item">
+        <div style="background-image: url('image/flowers/tuliporanje.jpg');" class="featured-product-item-image">
+                
+        </div>
+        <p class="title">
+           Tulip oranje
+        </p>
+        <p class="description">
+            tulpen oranje kleur
+        </p>
+        <p class="price">
+            €11
+        </p>
+        <button>
+            view item
+        </button>
+       </div>
+
+       <div class="featured-products-item">
+        <div style="background-image: url('image/flowers/tulippink.jpg');" class="featured-product-item-image">
+                
+        </div>
+        <p class="title">
+            Tulp
+        </p>
+        <p class="description">
+            Roze Tulp
+        </p>
+        <p class="price">
+            €11,99
+        </p>
+        <button>
+            view item
+        </button>
+       </div>
+     </section>
+
+    <!-- FOOTER FLEXBOX -->
+     <footer class="footer bg-dark py-5">
+      <div class="container grid grid-2">
+          <div>
+          <h2 class="logo">flowerpower</h1>
+          <p>Copyright &copy; 2020</p>
+          </div>
+      
+      
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Over Ons</a></li>
+              <li><a href="index.html">Bloemen</a></li>
+              <li><a href="index.html">Rozen</a></li>
+              <li><a href="index.html">Vazen</a></li>
+          </ul>
+      </nav>
+      </div>
+  </footer> 
+</body>
+</html>
